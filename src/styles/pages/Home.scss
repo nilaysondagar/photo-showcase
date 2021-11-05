@@ -1,0 +1,102 @@
+.home {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    .home-main {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+
+        .title-selector {
+            align-self: flex-start;
+            margin-left: 20px;
+        }
+
+        .loader-box {
+            width: 40%;
+            align-self: center;
+        }
+    }
+
+    .image-slider {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 280px);
+        grid-gap: 4px;
+        justify-content: space-between;
+        margin-bottom: 120px;
+        padding-top: 40px;
+        overflow-y: auto;
+
+        &::after {
+            content: "";
+            flex: auto;
+        }
+
+        .home-image-card {
+            width: 275px;
+            height: 410px;
+            transition: 0.6s ease-in-out;
+            transform: translateY(-24px);
+            margin-bottom: 20px;
+
+            .card-image-container {
+                width: 100%;
+                height: 100%;
+
+
+                .card-image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .home {
+        .home-main {
+            .title-selector {
+                align-self: center;
+                margin-left: 0;
+
+                .dropdown-title {
+                    font-size: 24px;
+                }
+
+                .dropdown-icon {
+                    margin-left: 0;
+                    font-size: 32px;
+                }
+
+            }
+
+            .dropdown-options {
+                align-items: center;
+
+                .dropdown-title {
+                    margin-bottom: 12px;
+                }
+
+                .dropdown-item {
+                    font-size: 24px;
+                }
+
+                .dropdown-icon {
+                    display: none;
+                }
+            }
+
+            .image-slider {
+                justify-content: center;
+            }
+        }
+    }
+}

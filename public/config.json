@@ -1,0 +1,24 @@
+{
+    "albums": [
+        {
+            "folderName": "edgy",
+            "lastImageIndex": 10,
+            "title": "On the Edge"
+        },
+        {
+            "folderName": "fashion",
+            "lastImageIndex": 6,
+            "title": "Flaming Fashion"
+        },
+        {
+            "folderName": "portraits",
+            "lastImageIndex": 31,
+            "title": "Perfect Portraits"
+        }
+    ],
+    "about": {
+        "aboutMe": "I'm a photographer based in beautiful Victoria, BC. I love capturing the true personality and spirit of people I photograph. With a fun, relaxed and engaging approach, I capture the uniqueness, beauty and confidence of the person you are. From the cuteness of a new born, to the joys of many life milestones, to casting your talents, and everything in between, I will capture the moments you will cherish forever.",
+        "contact": "Please reach out to me on Instagram (<a href=\"https://www.instagram.com/csondagar/\">@csondagar</a>) or by email (<a href=\"mailto:chetan@sondagar.com\">chetan@sondagar.com</a>)!",
+        "profilePictureSrc": "profilePicture.jpeg"
+    }
+}

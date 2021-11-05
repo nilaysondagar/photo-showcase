@@ -1,0 +1,22 @@
+.storybook {
+    display: flex;
+    flex-direction: column;
+
+    .section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+
+        &.buttons {
+            .button {
+                margin-right: 12px;
+            }
+        }
+
+        &.cards {
+            .card {
+                margin-right: 24px;
+            }
+        }
+    }
+}

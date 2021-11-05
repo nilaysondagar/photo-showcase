@@ -1,0 +1,26 @@
+.image-loader {
+    width: 100%;
+    height: 100%;
+
+    .image-loader-loading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        // transition: 0.2s ease-in-out;
+        animation: 1s ease image-load forwards;
+        filter: opacity(0) blur(10px) grayscale(1);
+    }
+
+    @keyframes image-load {
+        0% {
+            filter: opacity(0) blur(10px) grayscale(1);
+        }
+        100% {
+            filter: opacity(1) blur(0px) grayscale(0);
+        }
+    }
+}
